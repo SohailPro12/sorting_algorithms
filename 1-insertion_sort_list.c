@@ -42,9 +42,10 @@ void insertion_sort_list(listint_t **list)
 				swap_nodes(j->prev, jer);
 				if (!jer->prev)
 					*list = jer;
-				print_list((const listint_t *) *list);
+				print_list((const listint_t *)*list);
 			}
-			jer = jer->prev;
+			else
+				jer = jer->prev;
 		}
 	}
 }
