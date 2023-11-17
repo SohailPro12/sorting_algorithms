@@ -39,9 +39,9 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (jer->prev->n > jer->n)
 			{
-				swap_nodes(j->prev, j);
+				swap_nodes(j->prev, jer);
 				if (!jer->prev)
-					*list = j;
+					*list = jer;
 				print_list((const listint_t *) *list);
 			}
 			jer = jer->prev;
