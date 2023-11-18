@@ -29,7 +29,7 @@ void selection_sort(int *array, size_t size)
 			temp = array[small_idx];
 			array[small_idx] = array[i];
 			array[i] = temp;
-			print_array((const int *)array, size);
+			print_array(array, size);
 		}
 	}
 }
